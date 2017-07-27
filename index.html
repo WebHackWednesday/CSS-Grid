@@ -1,0 +1,106 @@
+
+<style>
+    body {
+       display: grid;
+       grid-template-rows: 100px min-content 1fr min-content;
+       grid-template-columns: 300px 1fr 300px;
+       grid-column-gap: 10px;
+       grid-row-gap: 10px;
+       height: 100%;
+       margin: 0;
+       padding: 0;
+   }
+    h1 {
+       grid-row: 1;
+       grid-column: 2 / span 2;
+       align-self: center;
+       justify-self:start;
+   }
+   article {
+       grid-row: 2 / span 2;
+       grid-column: 2;
+       align-self: start;
+   }
+   nav {
+       grid-row: 2;
+       grid-column: 1;
+   }
+   aside{
+       grid-row: 2;
+       grid-column: 3;
+   }
+   footer {
+        grid-row: 4;
+        grid-column: 1 / 4;
+        align-self: center;
+        justify-self:stretch;
+        padding:10px;
+        background-color: #e1e1e1;
+   }
+    @media (min-width: 0px) and (max-width: 992px) {
+        body {
+            display: grid;
+            grid-template-rows: min-content 1fr min-content min-content min-content;
+            grid-template-columns: 1fr;       
+        }
+        
+        h1 {
+            grid-row: 1 ;
+            grid-column: 1;
+            align-self: center;
+            justify-self:center;
+        }
+        
+        article {
+            grid-row: 2;
+            grid-column: 1;
+        }
+        
+        nav {
+            grid-row: 4;
+            grid-column: 1;
+        }
+
+        aside{
+            grid-row: 3;
+            grid-column: 1;
+        }
+        
+        footer {
+            grid-row: 5;
+            grid-column: 1;
+            align-self: center;
+            justify-self:stretch;
+        }
+    }
+    
+</style>
+
+<h1>Hello and Welcome to My Demo</h1>
+<article>
+    <p>
+        Labore sunt culpa consectetur non et fugiat eu aliqua et sunt. Pariatur eu laboris consequat nulla fugiat ut pariatur mollit
+        consequat. Et ad irure non proident elit nostrud ad aliqua minim commodo esse aliqua cillum. Sit nisi qui mollit
+        ullamco nisi minim anim. Nulla reprehenderit aliqua irure sint excepteur aute deserunt duis proident esse exercitation
+        aute exercitation veniam.
+    </p>
+    <p>
+        Labore sunt culpa consectetur non et fugiat eu aliqua et sunt. Pariatur eu laboris consequat nulla fugiat ut pariatur mollit
+        consequat. Et ad irure non proident elit nostrud ad aliqua minim commodo esse aliqua cillum. Sit nisi qui mollit
+        ullamco nisi minim anim. Nulla reprehenderit aliqua irure sint excepteur aute deserunt duis proident esse exercitation
+        aute exercitation veniam.
+    </p>
+ 
+
+</article>
+<nav>
+    <ul>
+        <li>Random Text Added Here</li>
+        <li>Random Text Added Here</li>
+        <li>Random Text Added Here</li>
+        <li>Random Text Added Here</li>
+        <li>Random Text Added Here</li>
+    </ul>
+</nav>
+<aside><p>Hi I am an Aside and I contain some stuff that is aside to the main content. I hope you like it.</p></aside>
+<footer>&copy; Martin Beeby 2017</footer>
